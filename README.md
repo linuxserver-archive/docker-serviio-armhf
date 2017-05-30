@@ -86,4 +86,5 @@ Setting a mapping for transcoding `-v /transcode`  ensures that the container do
 
 ## Versions
 
++ **30.05.16:** Rebase to alpine 3.6.
 + **17.04.16:** Initial Release.

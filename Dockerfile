@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.armhf:3.5
+FROM lsiobase/alpine.armhf:3.6
 MAINTAINER sparklyballs
 
 # set version label
@@ -10,7 +10,7 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 ARG FFMPEG_VER="3.1.7"
 ARG SERVIIO_VER="1.8"
 
-# environment settings
+# environment settings
 ENV JAVA_HOME="/usr/bin/java"
 
 # copy patches
@@ -20,7 +20,7 @@ COPY patches/ /tmp/patches/
 RUN \
  usermod -d /config/serviio abc && \
 
-# install build packages
+# install build packages
  apk add --no-cache --virtual=build-dependencies \
 	alsa-lib-dev \
 	bzip2-dev \
@@ -55,7 +55,7 @@ RUN \
 	yasm \
 	zlib-dev && \
 
-# install runtime packages
+# install runtime packages
  apk add --no-cache \
 	alsa-lib \
 	expat \
@@ -102,7 +102,7 @@ RUN \
 	x265 \
 	xvidcore && \
 
-# compile ffmpeg
+# compile ffmpeg
  mkdir -p /tmp/ffmpeg-src && \
  curl -o \
  /tmp/ffmpeg.tar.bz2 -L \
@@ -153,12 +153,12 @@ RUN \
  tar xf /tmp/serviio.tar.gz -C \
 	/app/serviio --strip-components=1 && \
 
-# fetch dcraw
+# fetch dcraw
  curl -o \
  /usr/bin/dcraw.c -L \
 	http://www.cybercom.net/~dcoffin/dcraw/dcraw.c && \
 
-# compile dcraw
+# compile dcraw
  cd /usr/bin && \
  gcc -o dcraw -O4 dcraw.c -lm -ljasper -ljpeg -llcms2 && \
 
