@@ -13,8 +13,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/serviio
-
-[![](https://images.microbadger.com/badges/version/lsioarmhf/serviio.svg)](https://microbadger.com/images/lsioarmhf/serviio "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/serviio.svg)](http://microbadger.com/images/lsioarmhf/serviio "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/serviio.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/serviio.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-serviio)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-serviio/)
+[![](https://images.microbadger.com/badges/version/lsioarmhf/serviio.svg)](https://microbadger.com/images/lsioarmhf/serviio "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/serviio.svg)](https://microbadger.com/images/lsioarmhf/serviio "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/serviio.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/serviio.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/armhf/armhf-serviio)](https://ci.linuxserver.io/job/Docker-Builders/job/armhf/job/armhf-serviio/)
 
 [Serviio][appurl] is a free media server. It allows you to stream your media files (music, video or images) to renderer devices (e.g. a TV set, Bluray player, games console or mobile phone) on your connected home network.
 
